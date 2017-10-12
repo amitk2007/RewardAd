@@ -16,4 +16,13 @@ public class PointsUIScript : MonoBehaviour
     {
         textGameObject.GetComponent<TextMesh>().text = "Points: " + PlayerScript.PlayerPoints;
     }
+
+    public void PlayGame()
+    {
+        Application.LoadLevel("Main");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
