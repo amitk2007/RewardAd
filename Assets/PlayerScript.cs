@@ -21,5 +21,6 @@ public class PlayerScript : MonoBehaviour
     {
         PlayerPoints++;
         PlayerPrefs.SetInt("PlayerPoints", PlayerPoints);
+        GameObject.Find("PointsText").GetComponent<PointsUIScript>().EditText();
     }
 }

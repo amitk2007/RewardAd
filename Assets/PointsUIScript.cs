@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PointsUIScript : MonoBehaviour
 {
@@ -8,15 +9,19 @@ public class PointsUIScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        EditText();
     }
 
     // Update is called once per frame
     void Update()
     {
-        textGameObject.GetComponent<TextMesh>().text = "Points: " + PlayerScript.PlayerPoints;
+        
     }
-
+    public void EditText()
+    {
+        textGameObject.gameObject.GetComponent<Text>().text = "Points: " + PlayerScript.PlayerPoints;
+    }
+    
     public void PlayGame()
     {
         Application.LoadLevel("Main");
