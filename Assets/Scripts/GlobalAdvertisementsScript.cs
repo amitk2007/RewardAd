@@ -51,12 +51,12 @@ public class GlobalAdvertisementsScript : MonoBehaviour
     public static void ShowAd()//reward
     {
         ShowOptions options = new ShowOptions();
-        options.resultCallback = HandleShowResult;
+        //options.resultCallback = HandleShowResult;
 
         Advertisement.Show(placementId, options);
     }
 
-    public static void HandleShowResult(ShowResult result)
+    /*public static void HandleShowResult(ShowResult result)
     {
         if (result == ShowResult.Finished)
         {
@@ -72,5 +72,5 @@ public class GlobalAdvertisementsScript : MonoBehaviour
         {
             Debug.LogError("Video failed to show");
         }
-    }
+    }*/
 }

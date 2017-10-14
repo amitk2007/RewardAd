@@ -81,11 +81,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AdsScript.cs" />
-    <Compile Include="Assets\CubesScript.cs" />
-    <Compile Include="Assets\GlobalAdvertisementsScript.cs" />
-    <Compile Include="Assets\PlayerScript.cs" />
-    <Compile Include="Assets\PointsUIScript.cs" />
+    <Compile Include="Assets\Scripts\AdsScript.cs" />
+    <Compile Include="Assets\Scripts\CubesScript.cs" />
+    <Compile Include="Assets\Scripts\GlobalAdvertisementsScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\PointsUIScript.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

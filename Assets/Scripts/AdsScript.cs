@@ -11,8 +11,6 @@ public class AdsScript : MonoBehaviour
         private string gameId = "1572401";
         #endif
 
-    ColorBlock newColorBlock = new ColorBlock();
-    public Color green = new Color(0.1F, 0.8F, 0.1F, 1.0F);
     Button m_Button;
 
     public string placementId = "rewardedVideo";
@@ -42,12 +40,12 @@ public class AdsScript : MonoBehaviour
     void ShowAd()//reward
     {
         ShowOptions options = new ShowOptions();
-        options.resultCallback = HandleShowResult;
+        //options.resultCallback = HandleShowResult;
 
         Advertisement.Show(placementId, options);
     }
 
-    void HandleShowResult(ShowResult result)
+    /*void HandleShowResult(ShowResult result)
     {
         if (result == ShowResult.Finished)
         {
@@ -63,5 +61,5 @@ public class AdsScript : MonoBehaviour
         {
             Debug.LogError("Video failed to show");
         }
-    }
+    }*/
 }

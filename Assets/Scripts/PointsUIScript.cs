@@ -26,6 +26,10 @@ public class PointsUIScript : MonoBehaviour
     {
         Application.LoadLevel("Main");
     }
+    public void OpenShop()
+    {
+        Application.LoadLevel("Shop");
+    }
     public void ExitGame()
     {
         Application.Quit();
